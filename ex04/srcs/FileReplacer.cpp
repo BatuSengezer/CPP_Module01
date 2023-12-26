@@ -6,7 +6,7 @@
 /*   By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 04:40:22 by bsengeze          #+#    #+#             */
-/*   Updated: 2023/12/26 04:40:23 by bsengeze         ###   ########.fr       */
+/*   Updated: 2023/12/26 16:01:24 by bsengeze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,30 @@ FileReplacer::FileReplacer(const std::string &sourceFile,
                            const std::string &destinationFile)
     : sourceFilename(sourceFile), destinationFilename(destinationFile) {}
 
-bool FileReplacer::replace(const std::string &from, const std::string &to) {
+std::string FileReplacer::manualReplace(const std::string &str,
+                                        const std::string &from,
+                                        const std::string &to) {
+  std::string result;
+  size_t startPos = 0;
+  size_t foundPos;
+
+  while ((foundPos = str.find(from, startPos)) != std::string::npos) {
+    result += str.substr(startPos, foundPos - startPos);
+    result += to;
+    startPos = foundPos + from.length();
+  }
+
+  result += str.substr(startPos);
+  return result;
+}
+
+bool FileReplacer::replaceFile(const std::string &from, const std::string &to) {
   std::string content = readFileIntoString();
   if (content.empty()) {
     return false;
   }
 
-  size_t startPos = 0;
-  while ((startPos = content.find(from, startPos)) != std::string::npos) {
-    content.replace(startPos, from.length(), to);
-    startPos += to.length();
-  }
+  content = manualReplace(content, from, to);
 
   std::ofstream outFile(destinationFilename);
   if (!outFile) {
