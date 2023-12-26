@@ -6,7 +6,7 @@
 /*   By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/25 23:49:20 by bsengeze          #+#    #+#             */
-/*   Updated: 2023/12/26 00:17:05 by bsengeze         ###   ########.fr       */
+/*   Updated: 2023/12/26 01:48:08 by bsengeze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class Zombie {
 
 public:
+  Zombie();
   Zombie(std::string name);
   ~Zombie();
 

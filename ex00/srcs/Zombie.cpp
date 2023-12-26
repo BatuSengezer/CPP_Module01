@@ -6,11 +6,13 @@
 /*   By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/25 23:49:48 by bsengeze          #+#    #+#             */
-/*   Updated: 2023/12/26 00:20:07 by bsengeze         ###   ########.fr       */
+/*   Updated: 2023/12/26 01:49:09 by bsengeze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+Zombie::Zombie() {}
 
 Zombie::Zombie(std::string name) : _name(name) { announce(); }
 
