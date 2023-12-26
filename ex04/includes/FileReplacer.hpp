@@ -6,7 +6,7 @@
 /*   By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 04:40:17 by bsengeze          #+#    #+#             */
-/*   Updated: 2023/12/26 04:40:19 by bsengeze         ###   ########.fr       */
+/*   Updated: 2023/12/26 04:42:34 by bsengeze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,4 @@ private:
   std::string destinationFilename;
 };
 
-#endif // FILEREPLACER_HPP
+#endif
