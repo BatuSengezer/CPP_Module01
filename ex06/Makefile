@@ -6,11 +6,11 @@
 #    By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/25 23:49:55 by bsengeze          #+#    #+#              #
-#    Updated: 2023/12/26 22:56:56 by bsengeze         ###   ########.fr        #
+#    Updated: 2023/12/26 22:57:50 by bsengeze         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = sed_is_for_losers
+NAME = harl_2.0
 CC = g++
 RM = rm -rf
 FLAGS = -std=c++98 -Wall -Wextra -Werror
@@ -20,7 +20,7 @@ SRC_DIR = srcs/
 GREEN   = \033[32;1m
 RESET	= \033[0m
 
-SRC 	= main.cpp FileReplacer.cpp
+SRC 	= main.cpp Harl.cpp
 SRCS	= $(addprefix $(SRC_DIR), $(SRC))
 
 OBJ		= $(SRC:.cpp=.o)
