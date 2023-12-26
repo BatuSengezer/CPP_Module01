@@ -6,11 +6,11 @@
 #    By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/25 23:49:55 by bsengeze          #+#    #+#              #
-#    Updated: 2023/12/26 22:50:27 by bsengeze         ###   ########.fr        #
+#    Updated: 2023/12/26 23:23:53 by bsengeze         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = harl_2.0
+NAME = harl2.0
 CC = g++
 RM = rm -rf
 FLAGS = -std=c++98 -Wall -Wextra -Werror

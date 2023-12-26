@@ -6,11 +6,11 @@
 #    By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/25 23:49:55 by bsengeze          #+#    #+#              #
-#    Updated: 2023/12/26 22:56:34 by bsengeze         ###   ########.fr        #
+#    Updated: 2023/12/26 23:24:38 by bsengeze         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = hithisisbrain
+NAME = hiThisIsBrain
 CC = g++
 RM = rm -rf
 FLAGS = -std=c++98 -Wall -Wextra -Werror

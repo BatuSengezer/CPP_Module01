@@ -6,11 +6,11 @@
 #    By: bsengeze <bsengeze@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/25 23:49:55 by bsengeze          #+#    #+#              #
-#    Updated: 2023/12/26 22:56:56 by bsengeze         ###   ########.fr        #
+#    Updated: 2023/12/26 23:24:10 by bsengeze         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = sed_is_for_losers
+NAME = sedIsForLosers
 CC = g++
 RM = rm -rf
 FLAGS = -std=c++98 -Wall -Wextra -Werror
