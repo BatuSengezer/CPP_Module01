@@ -41,7 +41,7 @@ bool FileReplacer::replaceFile(const std::string &from, const std::string &to) {
 
   content = manualReplace(content, from, to);
 
-  std::ofstream outFile(destinationFilename);
+  std::ofstream outFile(destinationFilename.c_str());
   if (!outFile) {
     std::cerr << "Error: Unable to create output file " << destinationFilename
               << std::endl;
@@ -53,7 +53,7 @@ bool FileReplacer::replaceFile(const std::string &from, const std::string &to) {
 }
 
 std::string FileReplacer::readFileIntoString() {
-  std::ifstream inFile(sourceFilename);
+  std::ifstream inFile(sourceFilename.c_str());
   if (!inFile) {
     std::cerr << "Error: Unable to open input file " << sourceFilename
               << std::endl;
