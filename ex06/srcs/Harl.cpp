@@ -62,10 +62,13 @@ void Harl::filterComplain(std::string level) {
   switch (levelNum) {
   case 1:
     debug();
+    // fall through
   case 2:
     info();
+    // fall through
   case 3:
     warning();
+    // fall through
   case 4:
     error();
     break;
