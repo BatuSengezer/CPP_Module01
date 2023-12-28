@@ -14,7 +14,7 @@
 
 HumanB::HumanB() {}
 
-HumanB::HumanB(const std::string &name) : _name(name), _weapon(nullptr) {}
+HumanB::HumanB(const std::string &name) : _name(name), _weapon(NULL) {}
 
 HumanB::~HumanB() {}
 
